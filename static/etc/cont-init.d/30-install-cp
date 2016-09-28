@@ -1,2 +1,2 @@
 #!/usr/bin/with-contenv bash
-[[ ! -d /app/couchpotato/.git ]] && git clone https://github.com/CouchPotato/CouchPotatoServer.git --depth 2 /app/couchpotato
+[[ ! /app/couchpotato/.git ]] && cd /app/couchpotato && git pull
