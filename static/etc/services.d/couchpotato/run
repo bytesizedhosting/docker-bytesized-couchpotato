@@ -2,6 +2,4 @@
 
 umask 0002
 
-chown -R bytesized:bytesized /app /movies /config
-
 exec s6-setuidgid bytesized python /app/couchpotato/CouchPotato.py --data_dir /config

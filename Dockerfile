@@ -8,4 +8,4 @@ EXPOSE 5050
 
 COPY static/ /
 
-VOLUME /data /config /movies
+VOLUME /data /config /media
