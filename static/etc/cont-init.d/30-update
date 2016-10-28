@@ -1,2 +1,6 @@
 #!/usr/bin/with-contenv bash
-[[ ! /app/couchpotato/.git ]] && cd /app/couchpotato && git pull
+if [[ /app/couchpotato/.git ]]; then
+  echo "Updating CouchPotato"
+  cd /app/couchpotato && git pull
+  chown -R bytesized:bytesized /app/
+fi
